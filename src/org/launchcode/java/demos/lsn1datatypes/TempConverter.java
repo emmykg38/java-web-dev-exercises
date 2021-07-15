@@ -8,7 +8,7 @@ public class TempConverter {
         double celsius;
         Scanner input;
 
-        input = new Scanner(System.in);
+        input = new Scanner(System.in); //I can comment here and that's really cool that it doesn't comment the entire line
         System.out.println("Enter the temperature in Fahrenheit: ");
         fahrenheit = input.nextDouble();
         input.close();
