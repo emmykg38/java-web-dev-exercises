@@ -1,6 +1,7 @@
 package exercises.controlflowandcollections;
 import java.util.Arrays;
 
+
 public class ArrayPractice {
     public static void main (String[] args) {
         int[] numbers = {1, 1, 2, 3, 5, 8};

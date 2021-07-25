@@ -9,18 +9,18 @@ public class HashMapPractice {
     public static void main(String[] args) {
         HashMap<Integer, String> students = new HashMap<>();
         Scanner input = new Scanner(System.in);
-        String newStudent = "";
+        String newStudent;
 
 
-        System.out.println("Enter the ID numbers (or ENTER to finish): ");
+        System.out.println("Enter the student names (or ENTER to finish): ");
 
         do {
-            System.out.print("ID: ");
-            Integer newId = input.nextInt();
+            System.out.print("Student name: ");
+            newStudent = input.nextLine();
 
-            if (newId != (-1)) {
-                System.out.print("Student name: ");
-                newStudent = input.next();
+            if (!newStudent.equals("")) {
+                System.out.print("ID: ");
+                Integer newId = input.nextInt();
                 students.put(newId, newStudent);
 
                 input.nextLine();
@@ -31,7 +31,7 @@ public class HashMapPractice {
         System.out.println("\nClass Roster: ");
 
         for (Map.Entry<Integer, String> student : students.entrySet()) {
-            System.out.println(student.getKey() + " (" + student.getValue() + ")");
+            System.out.println(student.getValue() + " (" + student.getKey() + ")");
         }
     }
 }
